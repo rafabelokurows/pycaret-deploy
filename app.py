@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-model = load_model('deployment_28042020')
+model = load_model('hospital_charges_v1')
 
 def predict(model, input_df):
     #input_df.to_csv("teste.csv",index=False)
@@ -24,7 +24,7 @@ def run():
     "How would you like to predict?",
     ("Online", "Batch"))
 
-    st.sidebar.info('This app is created to predict patient hospital charges')
+    st.sidebar.info('Predicting hospital insurance charges based on patient characteristics')
     st.sidebar.success('https://www.pycaret.org')
     
     st.sidebar.image(image_hospital)
