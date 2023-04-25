@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-model = load_model('deployment_28042020')
+model = load_model('deployment_28042020.pkl')
 
 def predict(model, input_df):
     #input_df.to_csv("teste.csv",index=False)
